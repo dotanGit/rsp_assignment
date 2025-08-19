@@ -22,7 +22,7 @@ const kafka = new Kafka({
 const producer = kafka.producer();
 
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static('.'));
 
 // Health check endpoint
 app.get('/health', (req, res) => {
